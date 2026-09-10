@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <script>
+        let usd = parseFloat(prompt("Enter USD", 100));
+        let currency = prompt("Choose currency: EUR, UAH or AZN");
+
+        let result;
+
+        switch(currency){
+            case "EUR":
+                result = usd * 0.80;
+                alert(result);
+                break;
+
+            case "UAH":
+                result = usd * 41;
+                alert(result);
+                break;
+
+            case "AZN":
+                result = usd * 1.7;
+                alert(result);
+                break;
+
+            default:
+                alert("Неправильна валюта");
+        }
+    </script>
+</body>
+</html>
